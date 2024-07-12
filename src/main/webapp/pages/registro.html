@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../img/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>       
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img id="logo" src="../img/Logo.jpg" alt="Logo G15 Autos"></img></a>
+        <nav>
+            <ul>
+                <li><a class="menu_nav" href="../index.html">Inicio</a></li>
+                <li><a class="menu_nav" href="./autos.html">Autos</a></li>
+                <li><a class="menu_nav" href="./acerca.html">Acerca de Nosotros</a></li>
+                <li><a class="menu_nav" href="./registro.html">Registro</a></li>
+                <li><a class="menu_nav" href="./api.html">API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="input_out">
+            <form>
+                <h2 class="animate__animated animate__pulse animate__infinite infinite">Registro</h2>
+                <input name="nombre" id="nombre" type="text" placeholder="Nombre" title="Ingresa tu nombre" maxlength="50">
+                <input name="apellido" id="apellido" type="text" placeholder="Apellido" title="Ingresa tu apellido" maxlength="50">
+                <input name="mail" id="mail" type="email" placeholder="Correo Electrónico" title="Ingresa tu dirección de correo" maxlength="100">
+                <input name="psw" id="psw" type="password" placeholder="Contraseña" title="Escribe la contraseña que deseas utilizar para el acceso a nuestra web" maxlength="50">
+                <input name="psw2" id="psw2" type="password" placeholder="Confirmar Contraseña" title="Repite la contraseña que deseas utilizar para el acceso a nuestra web" maxlength="50">
+                <br>
+                <div class="input_componentes">
+                    <input type="text" name="fechaNac" id="fechaNac" placeholder="F.Nacimiento (dd/mm/aaaa)" 
+                    onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <br>
+                    <select name="pais" id="pais">
+                        <option value="" disabled selected hidden>Seleccionar País...</option>
+                        <option value="arg">Argentina</option>
+                        <option value="bol">Bolivia</option>
+                        <option value="bra">Brasil</option>
+                        <option value="chi">Chile</option>
+                        <option value="col">Colombia</option>
+                        <option value="ecu">Ecuador</option>
+                        <option value="par">Paraguay</option>
+                        <option value="per">Perú</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="ven">Venezuela</option>
+                    </select>
+                </div>
+                <input type="number" name="dni" id="dni" placeholder="DNI">
+                <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
+                <br>
+                <input type="checkbox" name="check" id="check">
+                <label for="">Acepto términos y condiciones</label>
+                <br>
+                <button type="button" class="btn btn-danger btn-lg" onclick="ValidarMostrar()">Registrarse</button>
+            </form>         
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div id="footer_direccion">
+            <h4>Nuestras oficinas:</h4>
+            <h5>Triunvirato 3000
+                <a href="https://www.google.com.ar/maps/place/Av+Triunvirato+3000,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5847811,-58.4673141,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb60a440ef8fb:0x4e34d3fd9e77ca4b!8m2!3d-34.5847855!4d-58.4647392!16s%2Fg%2F11bw44cxrw?entry=ttu" target="_blank">
+                    <img src="../img/Iconos/maps.png" alt="icono maps">
+                </a>
+            </h5>
+            <h6>1425 - CABA</h6>
+            <h5>1144625874</h5>            
+        </div>
+        <br>
+        <div>
+            <a href="https://www.instagram.com" target="_blank"><img class="footer_redes" src="../img/Iconos/instagram.png" alt="icono instagram"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img class="footer_redes" src="../img/Iconos/tiktok.png" alt="icono tiktok"></a>
+            <a href="https://ar.linkedin.com" target="_blank"><img class="footer_redes" src="../img/Iconos/linkedin.png" alt="icono linkedin"></a>
+            <a href="https://twitter.com" target="_blank"><img class="footer_redes" src="../img/Iconos/twitterx.png" alt="icono X"></a>
+            <a href="https://www.youtube.com" target="_blank"><img class="footer_redes" src="../img/Iconos/youtube.png" alt="icono youtube"></a>
+        </div>
+        <br>
+        <p class="footer_p">Copyright 2024&copy;</p>
+        <br>
+    </footer>
+    
+    <script src="../js/registro.js"></script>
+
+</body>
+</html>

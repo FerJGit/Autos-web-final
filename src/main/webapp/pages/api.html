@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../img/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>     
+    <title>API</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img id="logo" src="../img/Logo.jpg" alt="Logo G15 Autos"></img></a>
+        <nav>
+            <ul>
+                <li><a class="menu_nav" href="../index.html">Inicio</a></li>
+                <li><a class="menu_nav" href="autos.html">Autos</a></li>
+                <li><a class="menu_nav" href="acerca.html">Acerca de Nosotros</a></li>
+                <li><a class="menu_nav" href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            
+            <script src="../js/api.js"></script>   
+
+            <section class="api-section">
+                <h2 class="animate__animated animate__zoomIn">Marcas de Autos (tomados desde API : https://www.carqueryapi.com)</h2>
+                <div id="api-cant-items">
+                    <label for="api_citems">Cantidad de items a mostrar :</label>
+                    <input type="number" name="api_citems" id="api_citems" placeholder="Items" value="9" oninput="setQItems()">
+                </div>
+                <div id="api-data" class="api-data"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div id="footer_direccion">
+            <h4>Nuestras oficinas:</h4>
+            <h5>Triunvirato 3000
+                <a href="https://www.google.com.ar/maps/place/Av+Triunvirato+3000,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5847811,-58.4673141,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb60a440ef8fb:0x4e34d3fd9e77ca4b!8m2!3d-34.5847855!4d-58.4647392!16s%2Fg%2F11bw44cxrw?entry=ttu" target="_blank">
+                    <img src="../img/Iconos/maps.png" alt="icono maps">
+                </a>
+            </h5>
+            <h6>1425 - CABA</h6>
+            <h5>1144625874</h5>            
+        </div>
+        <br>
+        <div>
+            <a href="https://www.instagram.com" target="_blank"><img class="footer_redes" src="../img/Iconos/instagram.png" alt="icono instagram"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img class="footer_redes" src="../img/Iconos/tiktok.png" alt="icono tiktok"></a>
+            <a href="https://ar.linkedin.com" target="_blank"><img class="footer_redes" src="../img/Iconos/linkedin.png" alt="icono linkedin"></a>
+            <a href="https://twitter.com" target="_blank"><img class="footer_redes" src="../img/Iconos/twitterx.png" alt="icono X"></a>
+            <a href="https://www.youtube.com" target="_blank"><img class="footer_redes" src="../img/Iconos/youtube.png" alt="icono youtube"></a>
+        </div>
+        <br>
+        <p class="footer_p">Copyright 2024&copy;</p>
+        <br>
+    </footer>
+
+</body>
+</html>
